@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "my-blog",
+  "name": "flare-stack-blog",
   "compatibility_date": "2026-02-17",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "main": "./src/server.ts",
@@ -10,21 +10,21 @@
   "keep_vars": true,
   "routes": [
     {
-      "pattern": "DOMAIN_PLACEHOLDER",
+      "pattern": "your-domain.com",
       "custom_domain": true
     }
   ],
   "d1_databases": [
     {
       "binding": "DB",
-      "database_id": "D1_DATABASE_ID",
+      "database_id": "your-d1-database-id",
       "migrations_dir": "migrations",
       "remote": true
     }
   ],
   "r2_buckets": [
     {
-      "bucket_name": "bucket-name-placeholder",
+      "bucket_name": "your-r2-bucket-name",
       "binding": "R2",
       "remote": true
     }
@@ -32,12 +32,12 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "id": "KV_NAMESPACE_ID",
+      "id": "your-kv-namespace-id",
       "remote": true
     },
     {
       "binding": "OAUTH_KV",
-      "id": "KV_NAMESPACE_ID",
+      "id": "your-kv-namespace-id",
       "remote": true
     }
   ],
