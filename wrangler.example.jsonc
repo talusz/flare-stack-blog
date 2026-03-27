@@ -10,7 +10,7 @@
   "keep_vars": true,
   "routes": [
     {
-      "pattern": "your-domain.com",
+      "pattern": "article.taluship.com",
       "custom_domain": true
     }
   ],
